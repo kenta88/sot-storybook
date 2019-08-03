@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
 import Button from '../components/button/Button';
@@ -33,6 +34,7 @@ stories.add('Default', () => (
       disabled={boolean('Disabled', false)}
       isLoading={boolean('is loading', false)}
       label={text('Label', 'Hello Storybook')}
+      onClick={action('onClick')}
     />
   </div>
   ), withInfoConfig);

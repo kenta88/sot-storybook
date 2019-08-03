@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
 import Input from '../components/input/Input';
@@ -33,6 +34,7 @@ stories.add('Default', () => (
       disabled={boolean('disabled', false)}
       isLoading={boolean('isLoading', false)}
       placeholder={text('placeholder', 'Hello Storybook')}
+      onChange={action('onChange')}
     />
   </div>
   ), withInfoConfig);
