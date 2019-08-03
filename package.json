@@ -21,6 +21,7 @@
     "@storybook/addon-links": "^5.1.10",
     "@storybook/addons": "^5.1.10",
     "@storybook/react": "^5.1.10",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "bulma": "^0.7.5",
     "classnames": "^2.2.6",
